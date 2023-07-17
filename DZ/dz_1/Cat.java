@@ -19,14 +19,14 @@
 // <имя>. Мне <возраст> года(лет). Мой владелец -
 // <имя владельца>."
 
-package DZ;
+package DZ.dz_1;
 
 import java.util.Scanner;
 
-public class Task1_dz {
+public class Cat {
     public static void main(String[] args) {
 
-        Cat cat_name = new Cat("Василий", 2, "Петров");
+        Cat1 cat_name = new Cat1("Василий", 2, "Петров");
         String cat_nameName = cat_name.getName();
         int cat_nameAge = cat_name.getAge();
         String cat_nameOwner = cat_name.getOwner();
@@ -38,18 +38,21 @@ public class Task1_dz {
         cat_name.setName("Пушок");
         cat_name.setAge(5);
         cat_name.setOwner("Петров_Кошечкин");
+        System.out.println("Кота зовут: " + cat_name.getName()); 
+        System.out.println("Возраст кота: " + cat_name.getAge());
+        System.out.println("Владелец: " + cat_name.getOwner());
         cat_name.greet();
         
     }
 }
 
 
-class Cat {
+class Cat1 {
     private String cat_name; // Приватное поле name
     private int age; // Приватное поле age
     private String owner_name;
 
-    public Cat(String cat_name, int age, String owner_name) {
+    public Cat1(String cat_name, int age, String owner_name) {
         this.cat_name = cat_name;
         this.age = age;
         this.owner_name = owner_name;
@@ -63,10 +66,7 @@ class Cat {
         return owner_name;
     }    
 
-    public Cat(){
-    }
-
-    public Cat(String string, int i, String string2) {
+    public Cat1(){
     }
 
     public void greet() {
@@ -79,15 +79,11 @@ class Cat {
                 System.out.print("Уточните сколько ему лет: ");
                 int new_age = scanner.nextInt();
 
-
-
             System.out.println("Мяу, меня зовут " + new_Name + "! Мне " + new_age + " года (лет)" + ", Мой владелец: " + new_Owner);
         }
         }
     
-    public String getName() {
-       return cat_name;
-    }
+
 
     public void setName(String cat_name) {
        this.cat_name = cat_name;
@@ -100,10 +96,6 @@ class Cat {
     public void setAge(int age) {
        this.age = age;
     }
-    public String getOwner() {
-       return owner_name;
-    }
-
     public void setOwner(String owner_name) {
        this.owner_name = owner_name;
     }
