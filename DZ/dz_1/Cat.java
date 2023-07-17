@@ -21,85 +21,89 @@
 
 package DZ.dz_1;
 
-import java.util.Scanner;
 
 public class Cat {
-    public static void main(String[] args) {
+    private String name;
+    private int age;
+    private Owner owner;
 
-        Cat1 cat_name = new Cat1("Василий", 2, "Петров");
-        String cat_nameName = cat_name.getName();
-        int cat_nameAge = cat_name.getAge();
-        String cat_nameOwner = cat_name.getOwner();
-        
-        System.out.println("Кота зовут: " + cat_name.getName()); // Получение имени с помощью публичного метода getName()
-        System.out.println("Возраст кота: " + cat_name.getAge());
-        System.out.println("Владелец: " + cat_name.getOwner());
-
-        cat_name.setName("Пушок");
-        cat_name.setAge(5);
-        cat_name.setOwner("Петров_Кошечкин");
-        System.out.println("Кота зовут: " + cat_name.getName()); 
-        System.out.println("Возраст кота: " + cat_name.getAge());
-        System.out.println("Владелец: " + cat_name.getOwner());
-        cat_name.greet();
-        
-    }
-}
-
-
-class Cat1 {
-    private String cat_name; // Приватное поле name
-    private int age; // Приватное поле age
-    private String owner_name;
-
-    public Cat1(String cat_name, int age, String owner_name) {
-        this.cat_name = cat_name;
+    /**
+     * Конструктор класса Cat.
+     *
+     * @param name имя кота
+     * @param age  возраст кота
+     */
+    public Cat(String name, int age) {
+        this.name = name;
         this.age = age;
-        this.owner_name = owner_name;
     }
 
-    public String getName() { // Публичный метод getName() для доступа к приватному полю name
-        return cat_name;
+    /**
+     * Получает имя кота.
+     *
+     * @return имя кота
+     */
+    public String getName() {
+        return name;
     }
 
-    public String getOwner() { // Публичный метод getName() для доступа к приватному полю name
-        return owner_name;
-    }    
-
-    public Cat1(){
+    /**
+     * Устанавливает имя кота.
+     *
+     * @param name имя кота
+     */
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public void greet() {
-        try (Scanner scanner = new Scanner(System.in)) {
-            // Prompt the user for their first name
-                System.out.print("Скажите как зовут кота: ");
-                String new_Name = scanner.nextLine();
-                System.out.print("Уточните владельца: ");
-                String new_Owner = scanner.nextLine(); 
-                System.out.print("Уточните сколько ему лет: ");
-                int new_age = scanner.nextInt();
-
-            System.out.println("Мяу, меня зовут " + new_Name + "! Мне " + new_age + " года (лет)" + ", Мой владелец: " + new_Owner);
-        }
-        }
-    
-
-
-    public void setName(String cat_name) {
-       this.cat_name = cat_name;
-    }
-
+    /**
+     * Получает возраст кота.
+     *
+     * @return возраст кота
+     */
     public int getAge() {
-       return age;
+        return age;
     }
 
+    /**
+     * Устанавливает возраст кота.
+     *
+     * @param age возраст кота
+     */
     public void setAge(int age) {
-       this.age = age;
+        this.age = age;
     }
-    public void setOwner(String owner_name) {
-       this.owner_name = owner_name;
+
+    /**
+     * Получает владельца кота.
+     *
+     * @return владелец кота
+     */
+    public Owner getOwner() {
+        return owner;
     }
-        
+
+    /**
+     * Устанавливает владельца кота.
+     *
+     * @param owner владелец кота
+     */
+    public void setOwner(Owner owner) {
+        this.owner = owner;
+    }
+
+    /**
+     * Выводит приветствие на консоль.
+     * Если у кота есть владелец, приветствие будет включать имя владельца.
+     */
+    public void greet() {
+        if (owner != null) {
+            System.out.println("Мяу! Меня зовут " + name + ". Мне " + age + " года(лет). Мой владелец - " + owner.getName() + ".");
+        } else {
+            System.out.println("Мяу! Меня зовут " + name + ". Мне " + age + " года(лет).");
+        }
+    }
 }
+
 
 
