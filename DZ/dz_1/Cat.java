@@ -21,17 +21,20 @@
 
 package DZ.dz_1;
 
-
+/**
+ * Класс Cat.
+ * 
+ */
 public class Cat {
-    private String name;
-    private int age;
-    private Owner owner;
+    private String name; // Приватное поле "имя"
+    private int age; // Приватное поле "возраст"
+    private Owner owner; // Приватное поле "Хозяин"
 
     /**
      * Конструктор класса Cat.
      *
-     * @param name имя кота
-     * @param age  возраст кота
+     * @param name имя Cat
+     * @param age  возраст Cat
      */
     public Cat(String name, int age) {
         this.name = name;

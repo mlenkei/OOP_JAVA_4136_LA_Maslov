@@ -1,5 +1,8 @@
 package DZ.dz_1;
 
+/*
+ * Класс "Владелец" (Owner)
+ */
 public class Owner {
 
     private String name;

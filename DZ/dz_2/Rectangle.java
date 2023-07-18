@@ -10,7 +10,8 @@
 package DZ.dz_2;
 
 public class Rectangle {
-    private double  width, height;
+    private double width;
+    private double height;
 
     // 1. конструктор без параметров
 
@@ -28,7 +29,13 @@ public class Rectangle {
       return height;
     }
     public void setHeight(double height) {
-      this.height = height;
+      this.height = height;   
+    }
+    public double  getWidth() {
+        return width;
+    }
+    public void setWidth(double width) {
+        this.width = width;
     }
 // 4. Метод "вычислить площадь" (calculateArea), который возвращает площадь прямоугольника (ширина * высота).
     public double calculateArea() {
@@ -37,10 +44,7 @@ public class Rectangle {
 // 5. Метод "вычислить периметр" (calculatePerimeter), который возвращает периметр прямоугольника (2 * (ширина + высота)).
     public double calculatePerimeter() {
       return 2 * (width + height);
-}
-    public void setWidth(int i) {
     }
-    public String getWidth() {
-        return null;
-    }
+
+
 }
