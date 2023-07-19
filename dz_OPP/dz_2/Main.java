@@ -1,4 +1,4 @@
-package DZ.dz_2;
+package dz_OPP.dz_2;
 
 public class Main {
 

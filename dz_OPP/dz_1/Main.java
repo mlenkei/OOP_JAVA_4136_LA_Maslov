@@ -1,4 +1,4 @@
-package DZ.dz_1;
+package dz_OPP.dz_1;
 
 public class Main {
     public static void main(String[] args) {
