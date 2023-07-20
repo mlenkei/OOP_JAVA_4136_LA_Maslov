@@ -1,6 +1,6 @@
 package dz_OOP2.dz_1;
 
-public class Horse extends The_brute implements IRunable, ISwimable{
+public class Horse extends The_brute implements IRunable, ISwimable, IJumping{
     
     private  int load_capacity;
 
@@ -16,7 +16,10 @@ public class Horse extends The_brute implements IRunable, ISwimable{
     public int speedOfRun() {
         return 30;
     }
-
+    @Override
+    public int speedOfFly() {
+        return 21;
+    }
     @Override
     public String say() {
         return "Иго го";

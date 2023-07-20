@@ -52,11 +52,11 @@ public class Zoo {
 
     }
 
-    public List<IFlyable> getIFlyable(){
-        List<IFlyable> result = new ArrayList<>();
+    public List<IJumping> getIFlyable(){
+        List<IJumping> result = new ArrayList<>();
         for (The_brute animal : animals){
-            if (animal instanceof IFlyable){
-                result.add((IFlyable) animal);
+            if (animal instanceof IJumping){
+                result.add((IJumping) animal);
             }
         }
         return result;
@@ -78,7 +78,7 @@ public class Zoo {
         return animals;
     }
 
-    public IFlyable[] getIFlyable() {
+    public IJumping[] getIFlyable() {
         return null;
     }
 }

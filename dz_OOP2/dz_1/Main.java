@@ -32,9 +32,9 @@ public class Main {
             System.out.println(String.format("%s, скорость: %s", String.valueOf(swimmer), swimmer.speedOfSwim()));
         }
 
-        System.out.println("__________________________IFlyable");
+        System.out.println("__________________________IJumping");
 
-        for (IFlyable fly : zoo.getIFlyable()){
+        for (IJumping fly : zoo.getIFlyable()){
             System.out.println(String.format("%s, скорость: %s", String.valueOf(fly), fly.speedOfFly()));
         }
 

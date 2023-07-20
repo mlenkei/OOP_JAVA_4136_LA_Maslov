@@ -1,6 +1,6 @@
 package dz_OOP2.dz_1;
 
-public class Owner implements ISpeakable, ISwimable {
+public class Owner implements ISpeakable{
     
     private String name;
 
@@ -16,6 +16,10 @@ public class Owner implements ISpeakable, ISwimable {
     public int speedOfSwim() {
         return 10;
     }
+    @Override
+    public int speedOfFly() {
+        return 15;
+}
 }
 
 

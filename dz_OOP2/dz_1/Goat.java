@@ -1,6 +1,6 @@
 package dz_OOP2.dz_1;
 
-public class Goat extends The_brute implements IRunable, ISwimable, IFlyable{
+public class Goat extends The_brute implements IRunable, ISwimable {
     
     private int horns;
 
@@ -9,10 +9,7 @@ public class Goat extends The_brute implements IRunable, ISwimable, IFlyable{
         this.horns = horns;
     }
 
-    @Override
-    public int speedOfFly() {
-        return 21;
-    }
+
 
     @Override
     public int speedOfSwim() {
