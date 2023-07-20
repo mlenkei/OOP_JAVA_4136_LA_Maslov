@@ -1,11 +1,11 @@
 package dz_OOP2.dz_1;
 
-public abstract class Animal implements ISpeakable{
+public abstract class The_brute implements ISpeakable{
 
     private String name;
     private int box;
 
-    public Animal(String name, int box) {
+    public The_brute(String name, int box) {
         this.name = name;
         this.box = box;
     }

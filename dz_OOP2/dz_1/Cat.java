@@ -1,6 +1,6 @@
 package dz_OOP2.dz_1;
 
-public class Cat extends Animal implements IRunable{
+public class Cat extends The_brute implements IRunable{
 
     private String color;
 

@@ -1,11 +1,17 @@
 package dz_OOP2.dz_1;
 
-public class Horse extends Animal implements IRunable{
+public class Horse extends The_brute implements IRunable, ISwimable{
+    
+    private  int load_capacity;
 
-    public Horse(String name, int box) {
+    public Horse(String name, int box, int load_capacity) {
         super(name, box);
+        this.load_capacity = load_capacity;
     }
-
+    @Override
+    public int speedOfSwim() {
+        return 3;
+    }
     @Override
     public int speedOfRun() {
         return 30;
@@ -13,6 +19,10 @@ public class Horse extends Animal implements IRunable{
 
     @Override
     public String say() {
-        return "Игого";
+        return "Иго го";
+    }
+    @Override
+    public String toString() {
+        return String.format("Horse: %s, load_capacity: %s", super.toString(), this.load_capacity);
     }
 }

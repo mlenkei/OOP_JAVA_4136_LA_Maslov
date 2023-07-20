@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "FamilyMemberTestDrive",
+            "request": "launch",
+            "mainClass": "dz_OOP2.dz_1.FamilyMemberTestDrive",
+            "projectName": "OOP_JAVA_bca20e84"
+        },
+        {
+            "type": "java",
             "name": "Main",
             "request": "launch",
             "mainClass": "dz_OPP.dz_2.Main",

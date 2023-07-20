@@ -3,14 +3,13 @@ package dz_OOP2.dz_1;
 public class Main {
     public static void main(String[] args) {
         Zoo zoo = new Zoo();
-        zoo.addAnimal(new Cat("Барсик", 1, "grey"))
-                .addAnimal(new Dog("Барон", 2))
-                .addAnimal(new Horse("Horse", 3))
-                .addAnimal(new Duck("Утка", 4))
-                .addAnimal(new PolarBear("Белый медведь", 20)
-                );
+        zoo.addAnimal(new Cat("Пушок", 1, "Трехцветный"))
+                .addAnimal(new Ram("Бараш", 2, "Пушистая"))
+                .addAnimal(new Horse("Ветерок", 3, 120))
+                .addAnimal(new Cow ("Буренка", 4, 30 ))
+                .addAnimal(new Goat("Кеша", 20, 35));
 
-        for (Animal animal : zoo.getAnimal()){
+        for (The_brute animal : zoo.getAnimal()){
             System.out.println(animal);
             System.out.println(animal.say());
         }

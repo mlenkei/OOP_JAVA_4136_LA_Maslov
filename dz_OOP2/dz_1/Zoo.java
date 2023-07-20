@@ -4,14 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Zoo {
-    private List<Animal> animals;
-    private Radio radio = new Radio();
+    private List<The_brute> animals;
+    private Owner owner = new Owner();
 
     public Zoo() {
         this.animals = new ArrayList<>();
     }
 
-    public Zoo addAnimal(Animal animal){
+    public Zoo addAnimal(The_brute animal){
         this.animals.add(animal);
         return this;
     }
@@ -19,11 +19,11 @@ public class Zoo {
     public List<ISpeakable> getISpeakable(){
         List<ISpeakable> answer = new ArrayList<>();
 
-        for (Animal animal : animals){
+        for (The_brute animal : animals){
             answer.add(animal);
         }
 
-        answer.add(radio);
+        answer.add(owner);
 
         return answer;
     }
@@ -43,7 +43,7 @@ public class Zoo {
 
     public List<IRunable> getIRunable(){
         List<IRunable> result = new ArrayList<>();
-        for (Animal animal : animals){
+        for (The_brute animal : animals){
             if (animal instanceof IRunable){
                 result.add((IRunable) animal);
             }
@@ -54,7 +54,7 @@ public class Zoo {
 
     public List<IFlyable> getIFlyable(){
         List<IFlyable> result = new ArrayList<>();
-        for (Animal animal : animals){
+        for (The_brute animal : animals){
             if (animal instanceof IFlyable){
                 result.add((IFlyable) animal);
             }
@@ -65,7 +65,7 @@ public class Zoo {
 
     public List<ISwimable> getISwimable(){
         List<ISwimable> result = new ArrayList<>();
-        for (Animal animal : animals){
+        for (The_brute animal : animals){
             if (animal instanceof ISwimable){
                 result.add((ISwimable) animal);
             }
@@ -74,7 +74,7 @@ public class Zoo {
 
     }
 
-    public  List<Animal> getAnimal() {
+    public  List<The_brute> getAnimal() {
         return animals;
     }
 
