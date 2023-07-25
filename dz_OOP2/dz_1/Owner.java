@@ -1,5 +1,6 @@
 package dz_OOP2.dz_1;
 
+
 public class Owner implements ISpeakable{
     
     private String name;
@@ -21,5 +22,6 @@ public class Owner implements ISpeakable{
         return 15;
 }
 }
+
 
 

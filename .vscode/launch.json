@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "dz_OOP3.dz_1.Main",
+            "projectName": "OOP_JAVA_bca20e84"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "dz_OOP3.dz_2.Main",
+            "projectName": "OOP_JAVA_bca20e84"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "dz_OOP3.task1_dz.Main",
+            "projectName": "OOP_JAVA_bca20e84"
+        },
+        {
+            "type": "java",
             "name": "FamilyMemberTestDrive",
             "request": "launch",
             "mainClass": "dz_OOP2.dz_1.FamilyMemberTestDrive",
