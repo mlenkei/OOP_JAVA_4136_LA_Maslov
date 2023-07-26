@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Task_2",
+            "request": "launch",
+            "mainClass": "dz_OOP4.task_2.Task_2",
+            "projectName": "OOP_JAVA_bca20e84"
+        },
+        {
+            "type": "java",
+            "name": "Metod_T",
+            "request": "launch",
+            "mainClass": "Metod_T",
+            "projectName": "OOP_JAVA_bca20e84"
+        },
+        {
+            "type": "java",
+            "name": "Task_1",
+            "request": "launch",
+            "mainClass": "Task_1",
+            "projectName": "OOP_JAVA_bca20e84"
+        },
+        {
+            "type": "java",
+            "name": "Task1",
+            "request": "launch",
+            "mainClass": "Task1",
+            "projectName": "OOP_JAVA_bca20e84"
+        },
+        {
+            "type": "java",
             "name": "Main",
             "request": "launch",
             "mainClass": "dz_OOP3.dz_1.Main",
