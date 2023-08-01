@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "dz_OOP5.task_1.Main",
+            "projectName": "OOP_JAVA_bca20e84"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "OOP_JAVA_bca20e84"
+        },
+        {
+            "type": "java",
             "name": "Task_2",
             "request": "launch",
             "mainClass": "dz_OOP4.task_2.Task_2",
